@@ -31,12 +31,12 @@ wget https://github.com/mar24n/fluxnode---system-auto-update/releases/download/v
 
 copy and paste command below to set the `exec` permission to the script , create `log` file and setup *crontab*
 ```
-chmod +x autoupdate_system.sh && mkdir crontab_logs && touch crontab_logs/autouptade_os.log && crontab -l | sed "\$a0 0 */14 * * /home/$USER/autoupdate_system.sh >> /home/$USER/crontab_logs/autouptade_os.log 2>&1" | crontab -
+chmod +x autoupdate_system.sh && mkdir crontab_logs && touch crontab_logs/autoupdate_os.log && crontab -l | sed "\$a0 0 */14 * * /home/$USER/autoupdate_system.sh >> /home/$USER/crontab_logs/autoupdate_os.log 2>&1" | crontab -
 ```
 
 the *Crontab* is set to execute script every 14 days
 
-Logs directory `/home/$USER/crontab_logs/autouptade_os.log`
+Logs directory `/home/$USER/crontab_logs/autoupdate_os.log`
 
 
    
